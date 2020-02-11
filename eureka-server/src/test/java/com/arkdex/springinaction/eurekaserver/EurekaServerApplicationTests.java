@@ -1,11 +1,10 @@
-package com.arkdex.springinaction.schedule;
-
+package com.arkdex.springinaction.eurekaserver;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class EurekaServerApplicationTests {
 
 	@Test
 	void contextLoads() {

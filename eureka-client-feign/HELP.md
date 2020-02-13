@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'com.arkdex.springinaction.eureka-server' is invalid and this project uses 'com.arkdex.springinaction.eurekaclient' instead.
+* The original package name 'com.arkdex.springinaction.eureka-server' is invalid and this project uses 'com.arkdex.springinaction.eurekazuul' instead.
 
 # Getting Started
 

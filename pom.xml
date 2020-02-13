@@ -13,6 +13,7 @@
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>eureka-client-feign</module>
+        <module>eureka-zuul</module>
     </modules>
 
     <dependencies>

@@ -6,6 +6,3 @@ zuul:
     greeting-service:
       path: /greeting/**
       url: forward:/greeting
-    foos-service:
-      path: /foos/**
-      url: http://localhost:8081/spring-zuul-foos-resource/foos

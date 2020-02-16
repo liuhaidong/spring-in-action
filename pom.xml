@@ -10,12 +10,13 @@
 
     <modules>
         <module>schedule-task</module>
+        <module>thread-pool</module>
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>eureka-client-feign</module>
         <module>eureka-zuul</module>
         <module>messaging-rabbitmq</module>
-        <module>thread-pool</module>
+        <module>stream-rabbitmq</module>
     </modules>
 
     <dependencies>

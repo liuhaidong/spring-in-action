@@ -9,9 +9,9 @@ public class CountDownTest {
         new Thread(){
             public void run() {
                 try {
-                    System.out.println("子线程"+Thread.currentThread().getName()+"正在执行");
+                    System.out.println("Thread "+Thread.currentThread().getName()+" is running");
                     Thread.sleep(3000);
-                    System.out.println("子线程"+Thread.currentThread().getName()+"执行完毕");
+                    System.out.println("Thread "+Thread.currentThread().getName()+" is done");
                     latch.countDown();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -22,9 +22,9 @@ public class CountDownTest {
         new Thread(){
             public void run() {
                 try {
-                    System.out.println("子线程"+Thread.currentThread().getName()+"正在执行");
+                    System.out.println("Thread "+Thread.currentThread().getName()+" is running");
                     Thread.sleep(3000);
-                    System.out.println("子线程"+Thread.currentThread().getName()+"执行完毕");
+                    System.out.println("Thread "+Thread.currentThread().getName()+" is done");
                     latch.countDown();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
@@ -33,10 +33,10 @@ public class CountDownTest {
         }.start();
 
         try {
-            System.out.println("等待2个子线程执行完毕...");
+            System.out.println("waiting 2 threads...");
             latch.await();
-            System.out.println("2个子线程已经执行完毕");
-            System.out.println("继续执行主线程");
+            System.out.println("All 2 threads are done");
+            System.out.println("back to Main");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

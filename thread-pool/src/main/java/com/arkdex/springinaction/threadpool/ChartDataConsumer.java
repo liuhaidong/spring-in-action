@@ -1,14 +1,17 @@
 package com.arkdex.springinaction.threadpool;
 
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.CountDownLatch;
 
 public class ChartDataConsumer implements Runnable {
 
     private final BlockingQueue<ChartData> queue;
     private final int producerCount;
+    private CountDownLatch countDownLatch;
 
-    public ChartDataConsumer(BlockingQueue<ChartData> queue, int producerCount) {
+    public ChartDataConsumer(BlockingQueue<ChartData> queue,CountDownLatch countDownLatch, int producerCount) {
         this.queue = queue;
+        this.countDownLatch = countDownLatch;
         this.producerCount = producerCount;
     }
 
@@ -23,6 +26,7 @@ public class ChartDataConsumer implements Runnable {
                     System.out.println(Thread.currentThread().getName() + " finished. ");
                     exitProducerCount++;
                     if (producerCount == exitProducerCount) {
+                        countDownLatch.countDown();
                            return;
                     }
                 } else {

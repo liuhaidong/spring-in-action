@@ -1,5 +1,6 @@
-package com.thepracticaldeveloper.rabbitmqconfig;
+package com.arkdex.springinaction.rabbitmq.service;
 
+import com.arkdex.springinaction.rabbitmq.RabbitServerApplication;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
@@ -23,6 +24,6 @@ public class CustomMessageSender {
     public void sendMessage() {
         final var message = new CustomMessage("Hello there!", new Random().nextInt(50), false);
         log.info("Sending message...");
-        rabbitTemplate.convertAndSend(MessagingApplication.EXCHANGE_NAME, MessagingApplication.ROUTING_KEY, message);
+        rabbitTemplate.convertAndSend(RabbitServerApplication.EXCHANGE_NAME, RabbitServerApplication.ROUTING_KEY, message);
     }
 }

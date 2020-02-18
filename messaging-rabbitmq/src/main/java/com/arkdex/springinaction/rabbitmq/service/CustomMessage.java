@@ -1,4 +1,4 @@
-package com.thepracticaldeveloper.rabbitmqconfig;
+package com.arkdex.springinaction.rabbitmq.service;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

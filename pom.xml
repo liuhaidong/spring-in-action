@@ -17,6 +17,9 @@
         <module>eureka-zuul</module>
         <module>messaging-rabbitmq</module>
         <module>stream-rabbitmq</module>
+        <module>reactive-rabbitmq</module>
+        <module>memory-leak</module>
+        <module>config-profile</module>
     </modules>
 
     <dependencies>

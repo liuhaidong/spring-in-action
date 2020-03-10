@@ -7,6 +7,7 @@ import org.springframework.util.MimeType;
 
 public class TextPlainMessageConverter extends AbstractMessageConverter {
 
+
     public TextPlainMessageConverter() {
         super(new MimeType("text", "plain"));
     }

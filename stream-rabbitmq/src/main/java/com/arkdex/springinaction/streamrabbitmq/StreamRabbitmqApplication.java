@@ -15,17 +15,18 @@ import org.springframework.messaging.handler.annotation.SendTo;
 @EnableBinding(Processor.class)
 public class StreamRabbitmqApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(StreamRabbitmqApplication.class, args);
-	}
-	@Bean
-	public MessageConverter providesTextPlainMessageConverter() {
-		return new TextPlainMessageConverter();
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(StreamRabbitmqApplication.class, args);
+    }
 
-	@StreamListener(Processor.INPUT)
-	@SendTo(Processor.OUTPUT)
-	public LogMessage enrichLogMessage(LogMessage log) {
-		return new LogMessage(String.format("[1]: %s", log.getMessage()));
-	}
+    @Bean
+    public MessageConverter providesTextPlainMessageConverter() {
+        return new TextPlainMessageConverter();
+    }
+
+    @StreamListener(Processor.INPUT)
+    @SendTo(Processor.OUTPUT)
+    public LogMessage enrichLogMessage(LogMessage log) {
+        return new LogMessage(String.format("[1]: %s", log.getMessage()));
+    }
 }

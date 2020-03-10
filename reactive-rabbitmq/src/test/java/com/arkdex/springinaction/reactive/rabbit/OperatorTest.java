@@ -4,6 +4,7 @@ import org.junit.Test;
 import reactor.core.publisher.Flux;
 
 import java.time.Duration;
+import java.util.Arrays;
 
 public class OperatorTest {
     //@Test
@@ -44,7 +45,7 @@ public class OperatorTest {
         Flux.range(1, 1000).takeUntil(i -> i == 10).subscribe(System.out::println);
     }
 
-    @Test
+    //@Test
     public void testMerge(){
         Flux.merge(Flux.interval(Duration.ofMillis(50)).range(0, 100).take(5), Flux.interval(Duration.ofMillis(100)).range(50, 100).take(5))
                 .toStream()
@@ -65,5 +66,13 @@ public class OperatorTest {
         source
                 .toStream()
                 .forEach(System.out::println);
+    }
+
+    @Test
+    public void testReduce(){
+        String[] myArray = { "this", "is", "a", "sentence" };
+        String result = Arrays.stream(myArray)
+                .reduce("", (a,b) -> a + b +" ");
+        System.out.println(result);
     }
 }

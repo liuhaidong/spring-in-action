@@ -1,4 +1,4 @@
-package com.arkdex.springinaction.memoryleak.schedule;
+package com.arkdex.springinaction.cglibproxy.schedule;
 
 public interface TaskFuture {
     String getFutureNames();

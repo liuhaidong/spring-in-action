@@ -20,6 +20,7 @@
         <module>reactive-rabbitmq</module>
         <module>memory-leak</module>
         <module>config-profile</module>
+        <module>cglib-proxy</module>
     </modules>
 
     <dependencies>

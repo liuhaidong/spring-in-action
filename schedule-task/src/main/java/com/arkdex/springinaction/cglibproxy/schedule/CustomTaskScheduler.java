@@ -1,4 +1,4 @@
-package com.arkdex.springinaction.memoryleak.schedule;
+package com.arkdex.springinaction.cglibproxy.schedule;
 
 import org.springframework.scheduling.Trigger;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler;

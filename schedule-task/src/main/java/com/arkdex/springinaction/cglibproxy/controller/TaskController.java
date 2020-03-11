@@ -1,6 +1,6 @@
-package com.arkdex.springinaction.memoryleak.controller;
+package com.arkdex.springinaction.cglibproxy.controller;
 
-import com.arkdex.springinaction.memoryleak.schedule.CustomTaskScheduler;
+import com.arkdex.springinaction.cglibproxy.schedule.CustomTaskScheduler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;

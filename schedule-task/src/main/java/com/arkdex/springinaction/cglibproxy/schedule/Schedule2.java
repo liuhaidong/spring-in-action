@@ -1,4 +1,4 @@
-package com.arkdex.springinaction.memoryleak.schedule;
+package com.arkdex.springinaction.cglibproxy.schedule;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;

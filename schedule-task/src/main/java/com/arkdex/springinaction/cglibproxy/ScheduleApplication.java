@@ -1,4 +1,4 @@
-package com.arkdex.springinaction.memoryleak;
+package com.arkdex.springinaction.cglibproxy;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

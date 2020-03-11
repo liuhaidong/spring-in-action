@@ -1,4 +1,4 @@
-package com.arkdex.springinaction.memoryleak;
+package com.arkdex.springinaction.cglibproxy;
 
 
 import org.junit.jupiter.api.Test;

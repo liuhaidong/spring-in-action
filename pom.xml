@@ -21,6 +21,9 @@
         <module>memory-leak</module>
         <module>config-profile</module>
         <module>cglib-proxy</module>
+        <module>chronicle-queue</module>
+        <module>collection-map</module>
+        <module>okhttp-poloniex</module>
     </modules>
 
     <dependencies>

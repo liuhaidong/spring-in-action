@@ -67,12 +67,6 @@ public class NavigableMapMain {
         Map.Entry ceilingEntry = mapHttpStatus.ceilingEntry(390);
         System.out.println(ceilingEntry.toString());
     }
-
-    private void floorEntry(){
-        Map.Entry floorEntry = mapHttpStatus.ceilingEntry(390);
-        System.out.println(floorEntry.toString());
-    }
-
     public static void main(String[] args) {
         NavigableMapMain navigableMapMain = new NavigableMapMain();
         navigableMapMain.initMap();
@@ -81,6 +75,5 @@ public class NavigableMapMain {
         navigableMapMain.headMap();
         navigableMapMain.tailMap();
         navigableMapMain.ceilingEntry();
-        navigableMapMain.floorEntry();
     }
 }

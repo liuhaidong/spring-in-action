@@ -9,3 +9,10 @@
  1. mvn package
  2. java -jar target/config-profile-0.0.1-SNAPSHOT.jar
  3. java -jar -Dspring.profiles.active=prod target/config-profile-0.0.1-SNAPSHOT.jar
+ 
+ 
+ Caused by: org.springframework.boot.context.properties.bind.UnboundConfigurationPropertiesException:
+
+ were left unbound.
+ 
+ the setter object need have a constructor without parameters 

@@ -8,15 +8,30 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
-    <artifactId>collection-map</artifactId>
+    <artifactId>disruptor-queue</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <description>Demo project for collection map</description>
+    <description>Demo project for chronicle queue</description>
     <properties>
-        <java.version>13</java.version>
+        <java.version>1.8</java.version>
     </properties>
 
+    <dependencyManagement>
+        <dependencies>
+       
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
+            <dependency>
+                <groupId>com.lmax</groupId>
+                <artifactId>disruptor</artifactId>
+                <version>3.4.2</version>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.4</version>
+            </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>

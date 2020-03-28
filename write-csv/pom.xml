@@ -8,28 +8,29 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>..</relativePath>
     </parent>
-    <artifactId>collection-map</artifactId>
+    <artifactId>write-csv</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <description>Demo project for collection map</description>
+    <description>Demo project for write csv</description>
     <properties>
-        <java.version>13</java.version>
+        <java.version>1.8</java.version>
     </properties>
-
 
     <dependencies>
         <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.6.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13</version>
-            <scope>test</scope>
+            <groupId>com.opencsv</groupId>
+            <artifactId>opencsv</artifactId>
+            <version>4.1</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 
 </project>

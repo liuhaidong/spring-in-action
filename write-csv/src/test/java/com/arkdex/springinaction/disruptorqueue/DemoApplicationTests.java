@@ -9,6 +9,7 @@ class DemoApplicationTests {
 
 	@Test
 	void contextLoads() {
+		new WriteExampleBean("A","B","C");
 	}
 
 }

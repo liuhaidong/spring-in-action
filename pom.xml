@@ -11,6 +11,7 @@
     <modules>
         <module>schedule-task</module>
         <module>thread-pool</module>
+        <module>thread-safe</module>
         <module>eureka-server</module>
         <module>eureka-client</module>
         <module>eureka-client-feign</module>

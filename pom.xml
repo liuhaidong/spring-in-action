@@ -27,6 +27,8 @@
         <module>okhttp-poloniex</module>
         <module>write-csv</module>
         <module>disruptor-queue</module>
+        <module>socket-chat</module>
+
     </modules>
 
     <dependencies>

@@ -1,13 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.arkdex.springinaction</groupId>
     <artifactId>spring-in-action</artifactId>
     <version>1.0-SNAPSHOT</version>
     <name>Spring In Action</name>
     <packaging>pom</packaging>
-
     <modules>
         <module>schedule-task</module>
         <module>thread-pool</module>
@@ -28,9 +26,8 @@
         <module>write-csv</module>
         <module>disruptor-queue</module>
         <module>socket-chat</module>
-
+        <module>spring-cloud-gateway</module>
     </modules>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -50,7 +47,6 @@
             </exclusions>
         </dependency>
     </dependencies>
-
     <build>
         <pluginManagement>
             <plugins>
@@ -66,13 +62,12 @@
             </plugins>
         </pluginManagement>
     </build>
-
     <properties>
         <java.version>1.8</java.version>
-        <spring-boot.version>2.2.4.RELEASE</spring-boot.version>
+        <spring-boot.version>2.2.6.RELEASE</spring-boot.version>
         <spring-session.version>1.2.2.RELEASE</spring-session.version>
         <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
-        <spring-cloud-dependencies.version>Hoxton.SR1</spring-cloud-dependencies.version>
+        <spring-cloud-dependencies.version>Hoxton.SR3</spring-cloud-dependencies.version>
         <spring-cloud-starter-config.version>1.2.2.RELEASE</spring-cloud-starter-config.version>
         <spring-cloud-config-server.version>1.2.2.RELEASE</spring-cloud-config-server.version>
         <spring-cloud-starter-eureka.version>2.0.2.RELEASE</spring-cloud-starter-eureka.version>
@@ -82,5 +77,9 @@
         <spring-boot-starter-web.version>1.4.2.RELEASE</spring-boot-starter-web.version>
         <spring-boot-maven-plugin.version>1.4.2.RELEASE</spring-boot-maven-plugin.version>
         <spring-cloud-starter-zuul.version>1.2.3.RELEASE</spring-cloud-starter-zuul.version>
+        <hibernate-validator.version>6.0.2.Final</hibernate-validator.version>
+        <junit-jupiter.version>5.2.0</junit-jupiter.version>
+        <redis.version>0.7.2</redis.version>
+        <junit-bom.version>5.5.2</junit-bom.version>
     </properties>
 </project>

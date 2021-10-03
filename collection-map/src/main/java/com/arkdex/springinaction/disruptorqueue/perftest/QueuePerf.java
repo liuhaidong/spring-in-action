@@ -1,4 +1,4 @@
-package com.arkdex.springinaction.disruptorqueue.perftest;;
+package com.arkdex.springinaction.disruptorqueue.perftest;
 
 import com.arkdex.springinaction.disruptorqueue.queue.IBlockingQueue;
 import com.arkdex.springinaction.disruptorqueue.queue.concurrent.ConcurrentQueue;
